@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier Prime';
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: black;
+}
+
+
+.body {
+    min-height: 320vh;
+}
+
+.container {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.menu {
+    background:linear-gradient(120deg,#7554D7,#1b1331);
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items .logo, .textomenu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu-items .logo img {
+    border-radius: 50%;
+    height: 74px;
+    box-shadow: 3px 3px 15px black;
+    margin:15px;
+    transform: rotate(35deg);
+}
+
+.textomenu p {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.menu-esquerda {
+    display: flex;
+    align-items: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-direita {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.home {
+    font-size: 40px;
+}
+
+.discord {
+    font-size: 35px;
+}
+
+#responsivo {
+    display: none;
+}
+
+/* HOME */
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo h1 {
+    color: #7453D5;
+    text-align: center;
+}
+
+.subtitulo p {
+    color: white;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7453D5;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    width: 300px;
+}
+
+.formulario-inicio input {
+    width: 250px;
+}
+
+.codigo {
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #7453D5;
+}
+
+.formulario-inicio button {
+    font-size: 14px;
+    padding: 10px 47px;
+    color: white;
+    background-color: #7453D5;
+    border: NONE;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario-inicio button:hover {
+    background-color: #1b1331;
+}
+
+.btnform {
+    font-size: 14px;
+    padding: 10px 47px;
+    color: white;
+    background-color: #7453D5;
+    border: NONE;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao-principal {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: rgb(194, 194, 194);
+    font-size: 12px;
+    text-align: center;
+}
+
+footer p a {
+    color:#7453D5;
+}
+
+.main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORMULÁRIO */
+
+.perguntas {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+}
+
+.respostas h1 {
+    color: #7453D5;
+    text-align: center;
+}
+
+.perguntas label {
+    color: white;
+    font-size: 20px;
+}
+
+.respostas {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* radio */
+.resposta-1 input{
+    opacity: 0;
+    margin-right: 10px;
+    margin-left: -30px;
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+
+}
+
+.resposta-1 label{
+    margin-left: 15px;
+}
+
+
+.resposta-1 input +label:before{
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #370daa;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.resposta-1 input:checked + label:before{
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #7453D5;
+    background-position: center;
+    box-sizing: border-box;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/*botao submit */
+
+.avancar {
+    margin-top: 50px;
+    padding: 10px 100px;
+    font-weight: bold;
+    color: white;
+    background-color: #7453D5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.avancar:hover {
+    background-color: #1b1331;
+}
+
+/* RESULTADO */
+.final-texto h1 {
+    text-align: center;
+    color: #7453D5;
+    font-size: 40px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mensagem {
+    background-color: #7453D5;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.botoes-redes {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.home1 {
+    font-size: 100px;
+}
+
+.discord1 {
+    font-size: 100px;
+}
+
+.mensagem p{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.redes-sociais p {
+    color: #7453D5;
+    font-size: 32px;
+    text-align: center;
+}
+
+#textform {
+    padding: 5px;
+    font-size: 50px;
+}
+
+#h1desafiob {
+    color: white;
+}
+
+.h2desafio,#h1desafio,#pdesafio {
+    text-align: center;
+    color: #7453D5;
+}
+
+#h2desafio {
+    color: white;
+    text-align: center;
+}
+
+.linha {
+    margin-top: 40px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+#textform {
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #7453D5;
+}
+#botaoform {
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 20px 140px;
+    font-weight: bold;
+    color: white;
+    background-color: #7453D5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+#resultado1 {
+    font-size: 120px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width:680px) {
+    .final-texto h1 {
+        font-size: 26px;
+    }
+
+    .mensagem p {
+        font-size: 32px;
+    }
+
+    .redes-socias p {
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .textomenu p {
+        display: none;
+    }
+
+    #responsivo {
+        display: flex;
+        font-size: 15px;
+    }
+
+    .menu-items .logo img {
+        height: 50px;
+    }
+
+    .mensagem p, .redes-sociais p {
+        color: white;
+        font-size: 16px;
+    }
+
+
+}
+@media screen and (max-width:400px) {
+
+    #responsivo {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .menu-items .logo img {
+        height: 40px;
+    }
+
+    .formulario-inicio {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .formulario-inicio input {
+        width: 150px;
+    }
+}
+@media screen and (max-width:370px) {
+
+    #responsivo {
+        display: none;
+    }
+
+    
+}

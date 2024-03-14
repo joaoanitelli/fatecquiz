@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Calouros Fatec 2023</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/85707a4b86.js" crossorigin="anonymous"></script>
+    <script src="js/vanilla-masker.min.js"></script>
+    <script>
+    </script>
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-items container">
+            <a href="index.html"><div class="menu-esquerda">
+                <div class="logo">
+                    <img src="images/logo.png" alt="images">
+                </div>
+                <div class="textomenu">
+                    <p>ADS Fatec</p>
+                    <p id="responsivo">ADS <br>Fatec</p>
+                </div>
+            </div></a>
+            <div class="menu-direita">
+                <a href="index.html"><i class="fa-brands fa-whatsapp home" style="color: #ffffff;"></i></a>
+                <a href="index.html"><i class="fa-brands fa-discord discord" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="time" style="width:100%; background: linear-gradient(120deg,#0086D1,#001F5C);">
+        <p class="textotime" style="color: white; text-align:center; padding:5px;font-size:20px; font-family:'Courier Prime';">TIME</p>
+    </div>
+    <main class="main container">
+        <div class="textos">
+            <div class="titulo">
+                <h1>BEM VINDO AO QUIZ DA RECEPÇÃO DOS CALOUROS =D</h1>
+            </div>
+            <div class="subtitulo">
+                <p>Você pode iniciar a resolução das questões inserindo o código logo a baixo. Não se esqueça de de inserir o código corretamente para validar suas questões</p>
+            </div>
+        </div>
+            <form method="POST" action="sorteio_perguntas.php" class="formulario-inicio">
+                <input class="codigo" type="text" id="codigo" name="codigo" placeholder="Insira o código 0000" autocomplete="off" autofocus >
+                <input class="btnform" name="submit" type="submit" value="ENVIAR CÓDIGO">
+            </form>
+    </main>
+    <footer {BACKGROUND_COLOR} class="container">
+        <p>Projeto de Recepção para os calouros de ADS do 2º Semestre de 2023 da Fatec de Presidente Prudente | Produzido por Alunos da Fatec.<br><br> Parcerias: <a href="http://www.liberteti.com/">©LiberteTI</a> e <a href="https://inspiratocompany.com.br/"> ©Inspirato Company</a>.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

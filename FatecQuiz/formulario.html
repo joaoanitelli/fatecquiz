@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Calouros Fatec 2023</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/85707a4b86.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body>
+    <header class="menu">
+        <div class="menu-items container">
+            <a href="index.html"><div class="menu-esquerda">
+                <div class="logo">
+                    <img src="images/logo.png" alt="images">
+                </div>
+                <div class="textomenu">
+                    <p>ADS Fatec</p>
+                    <p id="responsivo">ADS <br>Fatec</p>
+                </div>
+            </div></a>
+            <div class="menu-direita">
+                <a href="index.html"><i class="fa-brands fa-whatsapp home" style="color: #ffffff;"></i></a>
+                <a href="index.html"><i class="fa-brands fa-discord discord" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </header>
+    <main class="main container">
+        <div class="perguntas">
+            <form method="POST" action="calcular_resultado.php">
+
+            <input type="hidden" name="codigo" value="{CODIGO}"/>
+            <!-- BEGIN BLOCK_PERGUNTA -->
+            <div class="respostas pergunta-1">
+                <input type="hidden" name="{NOME_PERGUNTA}" value="{ID_PERGUNTA}"/>
+                <h1>{PERGUNTA}</h1>
+                
+                <div class="resposta-1">
+                    <!-- BEGIN BLOCK_RESPOSTA -->
+                    <input type="radio" id="radio-{ID_RESPOSTA}" name="{NOME_RESPOSTA}" value="{ID_RESPOSTA}"><label for="radio-{ID_RESPOSTA}">{RESPOSTA}</label>
+                    <!-- END BLOCK_RESPOSTA -->
+                </div>
+                
+            </div>
+
+            <div class="linha"></div>
+            <!-- END BLOCK_PERGUNTA -->
+            
+            <div class="respostas desafio">
+                <h1 id="h1desafiob">Você lembra como transformar um número binário em um
+                    decimal? Olhe o exemplo:
+                    0101001 = 0.2
+                    6 + 1.2
+                    5 + 0.2
+                    4 + 1.2
+                    3 + 0.2
+                    2 + 0.2¹ + 1.2
+                    0
+                    </h1>
+                    <h1 id="h1desafiob">Pois bem, vamos ao desafio...</h1>
+                    <h1 id="h1desafio">1) Responda às perguntas.<br><br>
+                        2) Após completar o nome escreva o número binário que cada nome
+                        formará.
+                        Para isso pense o seguinte:
+                        Se letra do nome constar no nome do curso, então vale 1
+                        Senão vale 0<br><br>
+                        <h2 id="h2desafio"> Sistema operacional desenvolvido pela microsoft:<br> _ _ _ _ _ _ _</h2><br><br>
+                        <h2 id="h2desafio"> Sistema operacional desenvolvido pela apple:  <br> _ _ _ _ _
+                        </h2><br><br>
+                        <h1 id="h1desafio">
+                        3) Transforme esses números binários em decimais<br><br>
+                        4) Some os números decimais encontrado<br><br>
+                        5) O resultado final é:</h1>
+                <input id="textform" name="resposta_desafio" type="text">
+            </div>
+            <input id="botaoform" type="submit" name="submit" value="ENVIAR">
+        </form>
+        </div>
+    </main>
+    <footer {BACKGROUND_COLOR} class="container">
+        <p>Projeto de Recepção para os calouros de ADS do 2º Semestre de 2023 da Fatec de Presidente Prudente | Produzido por Alunos da Fatec.<br><br> Parcerias: <a href="http://www.liberteti.com/">©LiberteTI</a> e <a href="https://inspiratocompany.com.br/"> ©Inspirato Company</a>.</p>
+    </footer>
+</body>
+</html>
